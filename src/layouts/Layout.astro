@@ -1,10 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-import '@fontsource-variable/onest';
+import Header from "../components/Header.astro";
+import "@fontsource-variable/onest";
 
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
@@ -12,24 +12,23 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.webp">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.webp">
-<link rel="manifest" href="/site.webmanifest">
-		<title>{title}</title>
-	</head>
-	<body class="bg-slate-200">
-		<Header />
-		<slot />
-		
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-200">
+    <Header />
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family:  'Onest Variable', system-ui, sans-serif;
-	}
+  html {
+    font-family: "Onest Variable", system-ui, sans-serif;
+  }
 </style>
