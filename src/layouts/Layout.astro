@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Content from '../components/Content.astro';
+import Bento from '../components/Bento.astro';
 import '@fontsource-variable/onest';
 
 interface Props {
@@ -24,7 +25,7 @@ const { title, description } = Astro.props;
 	<body class="bg-slate-200">
 		<slot />
 		<Header />
-		<main>
+		<main class="px-72">
 			<Content />
 		</main>
 	</body>
