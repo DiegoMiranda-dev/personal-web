@@ -2,10 +2,12 @@
 interface Props {
     class?: string
     title:string
+    url: string
 }
+
 const {title} = Astro.props
 ---
 
-<article class ={`${Astro.props.class} relative rounded-xl backdrop-blur-xl border border-black/10  col-span-2 font-semibold text-black hover:scale-110 transition ease-in delay-150`}>
+<a href={`${Astro.props.url}`} class ={`${Astro.props.class} relative rounded-xl backdrop-blur-xl border border-black/10  col-span-2 font-semibold text-black hover:scale-110 transition ease-in delay-150`} href="">
     <h3>{title}</h3>
-</article>
+</a>
