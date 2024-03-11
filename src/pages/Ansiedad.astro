@@ -1,8 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Sections from "../components/Sections.astro"
+import Sections from "../components/titles.astro"
+import Ayuda from '../components/Ayuda.astro'
+import Footer from "../components/Footer.astro";
+import type { Code } from "astro:components";
+
 ---
 
 <Layout title="TOMIR" description="La ansiedad es ">
-    <Sections titulo="Ansiedad" subtitulo="¿Qué es la ansiedad?" texto="" />
+    <Sections titulo="Ansiedad" subtitulo="¿Qué es la ansiedad?" />
+    <section class="px-10 lg:px-72 text-lg">
+        <p>La ansiedad es un trastorno más común que la depresión. Este trastorno se relaciona con miedo y preocupación de manera excesiva; estas sensaciones van acompañadas de mareos, náuseas, dolores en el peño, tensión física, causando una sensación de angustia intensa, interfiriendo en el día a día de quienes lo padecen.</p>
+        <p>Las personas que padecen de ansiedad experimentan una angustia fuerte ante situaciones cotidianas que abarcan desde cosas como hablar en voz alta hasta hablar en público y/o establecer comunicación con cualquier persona. Algunos síntomas de ansiedad son:
+        </p>
+        <ul class="px-6 my-2 list-disc font-semibold">
+            <li>Irritabilidad e inquietud.</li>
+            <li>Náuseas y mareos.</li>
+            <li>Malestar estomacal y abdominal.</li>
+            <li>Sudoración excesiva junto con temblores.</li>
+            <li>Insomnio.</li>
+            <li>Sensaciones de peligro y pánico.</li>
+        </ul>
+        <p>
+            La ansiedad puede aumentar el riesgo de depresión, drogadicción y pensamientos suicidas. Los abusos, pérdidas y experiencias traumáticas de cualquier tipo aumentan la probabilidad de desarrollar ansiedad, al igual que otros trastornos como la depresión. 
+        </p>
+        <p>Existen varios medicamentos para tratar el trastorno de ansiedad generalizada como:</p>
+        <ul class="px-6 my-2 list-disc font-semibold">
+            <li>Escitalopram (Lexapro)</li>
+            <li>Duloxetina (Cymbalta)</li>
+            <li>Venlafaxina (Effexor XR)</li>
+            <li>Paroxetina (Paxil, Pexeva)</li>
+        </ul>
+        <p>Estos medicamentos son recetados por especialista y se prohíbe su uso sin un acompañamiento médico primero.</p>
+        <h4>Recomendaciones</h4>
+        <ul class="px-6 my-2 list-disc font-semibold">
+            <li>Evitar el consumo de cualquier tipo de droga.</li>
+            <li>Hacer ejercicio físico y meditación.</li>
+            <li>Tener y/o desarrollar buenos hábitos alimenticios y de sueño regulares.</li>
+            <li>Aplicar diferentes técnicas de relajación como la relajación muscular progresiva.</li>
+        </ul>
+    </section>
+    <Ayuda />
 </Layout>
+<Footer />

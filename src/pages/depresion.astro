@@ -1,8 +1,88 @@
 ---
-import Sections from "../components/Sections.astro"
-import Layout from "../layouts/Layout.astro"
+import Titles from "../components/titles.astro";
+import Layout from "../layouts/Layout.astro";
+import Ayuda from "../components/Ayuda.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="" description="">
-    <Sections titulo="Depresión" subtitulo="¿Qué es la depresión?"/>
+  <Titles titulo="Depresión" subtitulo="¿Qué es la depresión?" />
+  <section class="px-10 lg:px-72 text-lg">
+    <p>
+      Un estado de ánimo duradero donde persiste el estar deprimido (periodo de
+      tristeza absoluta que interfiere con actividades diarias), es un trastorno
+      muy común donde la persona que lo padece tiene pensamientos negativos, es
+      incapaz de ver las cosas subjetivamente donde siempre se inclina por lo
+      negativo interfiriendo con sus relaciones personales, trabajo, escuela y
+      sobre todo hace muy difícil lidiar consigo mismo.
+      <br />Cualquier persona puede padecer depresión, pero las personas que han
+      sufrido una pérdida, una ruptura amorosa, han sufrido cualquier tipo de
+      abuso son más propensas a desarrollar este padecimiento. A día de hoy
+      existen algunos tratamientos y medicamentos eficaces contra la depresión
+      tales como:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Amitriptilina y Amoxapina</li>
+        <li>Desipramina (Norpramin)</li>
+        <li>Doxepina.</li>
+      </ul>
+    </p>
+    <p>
+      Estos medicamentos funcionan afectando principalmente a los
+      neurotransmisores que las neuronas cerebrales utilizan para comunicarse
+      entre sí. Producen cambios en la química cerebral y la comunicación de las
+      células nerviosas cerebrales que regulan el estado de ánimo. Estos solo
+      son unos cuantos, también hay tratamientos como:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Actividad conductual</li>
+        <li>terapia cognitiva</li>
+        <li>Psicoterapia conductual</li>
+      </ul>
+    </p>
+
+    <p>
+      Algunos de estos tratamientos utilizan estrategias para afrontar el
+      padecimiento, generando introspección, lo cual se utiliza para sentirse
+      mejor con uno mismo y evitar ataques o recaídas. Aunque existen estos
+      medicamentos y tratamientos, es necesario decir que pueden producir
+      efectos secundarios como:
+      <ul class="px-6 my-2 font-semibold list-disc" font-semibold>
+        <li>Nauseas</li>
+        <li>Aumento de peso</li>
+        <li>Insomnio</li>
+      </ul>
+    </p>
+    <h4 class="font-bold">Recomendaciones</h4>
+    <ul class="px-6 my-2 list-disc font-semibold">
+      <li>
+        Hacer ejercicio, el ejercicio libera dopamina, serotonina y endorfinas,
+        neurotransmisores importantes (relacionados con el placer, estimulación,
+        aprendizaje, toma de decisiones, coordinación, etc.) que el cuerpo
+        produce de forma natural.
+      </li>
+      <li>
+        Evitar el aislamiento, aunque cuando se padece de depresión es muy común
+        aislarse, hay que evitar a toda costa esto, persistir en relacionarse
+        con amigos, familia, parejas.
+      </li>
+      <li>
+        Evitar el uso de drogas tales como el alcohol, cigarro, cocaína,
+        heroína, cristal, tusi, marihuana, así como cualquier tipo de lo
+        contrario, se pueden amplificar los síntomas de depresión.
+      </li>
+      <li>
+        Acudir con un especialista lo más rápido posible si está en su alcance,
+        de lo contrario relacionarse con gente de confianza con la que pueda
+        hablar de lo que siente, lo que lo atormenta.
+      </li>
+      <li>
+        Siga haciendo cosas que disfrutaba hacer, como tocar la guitarra,
+        escuchar música, dibujar, cantar, bailar, entre otras.
+      </li>
+      <li>
+        No tome ningún antidepresivo que no sea recetado por un especialista.
+      </li>
+    </ul>
+  </section>
+  <Ayuda />
+  <Footer />
 </Layout>
