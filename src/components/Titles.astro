@@ -1,0 +1,18 @@
+---
+import Footer from "./Footer.astro";
+
+interface sections {
+    titulo: string,
+    subtitulo: string,
+}
+
+const {titulo, subtitulo} = Astro.props;
+---
+
+<section class="px-10 lg:px-72 ">
+    <br><article>
+        <h2 class="font-bold text-2xl">{titulo}</h2>
+        <h3 class="font-bold text-xl">{subtitulo}</h3>
+    </article>
+   
+</section>
