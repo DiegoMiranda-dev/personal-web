@@ -1,11 +1,103 @@
 ---
-
 import Titles from "../components/Titles.astro";
 import Layout from "../layouts/Layout.astro";
 import Buttons from "../components/Buttons.astro";
+import Ayuda from "../components/Ayuda.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="" description="">
-    <Titles titulo="Anorexia y Bulimia" subtitulo="¿Qué es la anorexia y qué es la bulimia?"/>
-<Buttons />
+<Layout title="Anorexia y Bulimia" description="La anorexia es un transtorno alimenticio caracterizado por un peso
+corporal extremadamente bajo. La bulimia es un padecimiento donde se ingieren grandes cantidades de
+alimentos en un plazo de tiempo corto, generado por impulsos, ansiedad y
+nerviosismo.">
+  <Titles
+    titulo="Anorexia y Bulimia"
+    subtitulo="¿Qué es la anorexia y qué es la bulimia?"
+  />
+  <section class="px-10 lg:px-72 text-lg">
+    <h4 class="font-bold">Anorexia</h4>
+    <p>
+      La anorexia es un transtorno alimenticio caracterizado por un peso
+      corporal extremadamente bajo por un temor a subir de peso de manera
+      desproporcionada asi como una percepsion del peso distorcionada.
+    </p>
+    <p>
+      A menudo las personas que padecen anorexia sueles restringir excesivamente
+      la cantidad de comida que ingieren. Asi logrando tener un control sobre
+      las calorias que comen. En algunos casos esto no es suficiente y recurren
+      a extremos más peligrosos como:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Causarse el vomito.</li>
+        <li>Usar laxantes de manera desmedida.</li>
+        <li>Haciendo ejercicio en exceso.</li>
+      </ul>
+      Algunos sintomas son:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Perdida de peso excesiva</li>
+        <li>Recuento de celulas sanguineas anormal</li>
+        <li>Desmayos y fatiga</li>
+        <li>Piel seca y/o amarillenta</li>
+        <li>Perdida de cabello</li>
+        <li>Erosion dental</li>
+        <li>Deshidratación</li>
+      </ul>
+    </p>
+
+    <h4 class="font-bold">Recomendaciones</h4>
+    <p>
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Fijar un horario para cada comida</li>
+        <li>Fraccionar las porciones</li>
+        <li>Participar en la eleccion der alimentos</li>
+        <li>
+          Evitar alimentos que sean dificles de mastricar y desprendan un aroma
+          fuerte
+        </li>
+      </ul>
+    </p>
+    <div class="bg-gray-500 w-100% h-[2px] mb-4"></div>
+    <h4 class="font-bold">Bulimia</h4>
+    <p>
+        La bulimia es un padecimiento donde se ingieren grandes cantidades de
+     alimentos en un plazo de tiempo corto, generado por impulsos, ansiedad y
+     nerviosismo. Las personas con bulimia suelen provocarse el vómito y
+     utilizar laxantes de forma excesiva (lo cual es muy peligroso para la
+     salud) para así evitar subir de peso. </p>
+     <p>También se están presentes las dietas estrictas y el ayuno. Las personas que padecen de esto, son
+     personas a las cuales les importa su peso y su cuerpo en general, suelen
+     ser muy duras con ellas mismas juzgándose y haciéndose sentir mal por algo
+     que está fuera de su control. Provocándose el vómito o como mejor se
+     conoce "purgarse" después de un atracón o comida, algunos síntomas son:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Miedo al aumentar de peso.</li>
+        <li>Episodios de atracones de comida.</li>
+        <li>Perdida de control al comer.</li>
+        <li>
+          Usar productos a base de hierbas en exceso para evitar el subir de
+          peso
+        </li>
+        <li>Ayunar y/o restringir alguna clase de alimentos en específico.</li>
+        <li>Negación al comer en público.</li>
+        <li>Inflamación de manos y los pies.</li>
+        <li>Idas al baño justo después de "comer".</li>
+      </ul>
+    </p>
+
+    <h4 class="font-bold">Recomendaciones</h4>
+    <p>
+        <ul class="px-6 my-2 list-disc font-semibold">
+            <li>No hablar sobre el peso corporal.</li>
+            <li>Trabajar en mejorar la autoestima.</li>
+            <li>Organizar las comidas del día.</li>
+            <li>Rodearte de personas de confianza.</li>
+            <li>Acercarse a un especialista para obtener un tratamiento eficaz.</li>
+        </ul>
+    </p>
+    <div class="bg-gray-500 w-100% h-[2px] mb-4"></div>
+  </section>
+
+  <Ayuda />
+  <Buttons />
+  <Footer />
+  
 </Layout>

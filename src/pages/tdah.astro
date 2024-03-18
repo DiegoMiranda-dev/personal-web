@@ -1,11 +1,114 @@
 ---
-
 import Titles from "../components/Titles.astro";
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 import Buttons from "../components/Buttons.astro";
+import Ayuda from "../components/Ayuda.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="" description="">
-    <Titles titulo="TDAH" subtitulo="¿Qué es el TDAH?" />
-    <Buttons />
+<Layout title="TDAH" description="Las personas con TDAH tienen problemas para mantener
+la atención, para controlar conductas compulsivas, así como ser demasiado
+activos.">
+  <Titles
+    titulo="Transtorno por déficit de atención e hiperactividad (TDAH)"
+    subtitulo="¿Qué es el TDAH?"
+  />
+  <section class="px-10 lg:px-72 text-lg">
+    <p>
+      El TDAH es uno de los trastornos más desarrollados en los niños, por lo
+      general se diagnostica durante la niñez, pero no significa que un adulto
+      no pueda padecerlo. Las personas con TDAH tienen problemas para mantener
+      la atención, para controlar conductas compulsivas, así como ser demasiado
+      activos. Ocasionando varias dificultades como:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Mala conducta.</li>
+        <li>
+          Facilidad para abusar de cualquier tipo de sustancia nociva para la
+          salud.
+        </li>
+        <li>
+          Problemas de aprendizaje como: dislexia, discalculia y/o Disgrafia.
+        </li>
+        <li>Dificultades al relacionarse con otras personas.</li>
+      </ul>
+      Esto solo son algunos puntos negativos acerca de las personas con TDAH, pero
+      hay demasiados y algunos son peligrosos hasta el punto de poner en jaque el
+      futuro de las personas con este padecimiento, por ejemplo:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Depresión.</li>
+        <li>Ansiedad.</li>
+        <li>Dificultad para establecer cualquier tipo de relacion.</li>
+      </ul>
+      A diferencia de otros trastornos como la depresión y ansiedad, el TDAH es
+    un trastorno que más afecta a los niños, haciéndoles pasar por una infancia
+    y en general un desarrollo más complejo que al resto de niños. Aunque se suele
+    diagnosticar en la niñez, el tener este padecimiento es para toda la vida (aunque
+    a veces solo disminuye mientras mayor sea la edad) independientemente de la
+    causa. Algunas de las causas más comunes son:
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Una lesión cerebral.</li>
+        <li>
+          Abuso de sustancias nocivas para la salud (tabaco, alcohol o cualquier
+          tipo de droga) durante el embarazo.
+        </li>
+        <li>Exposición a metales pesados como el Plomo (Pb).</li>
+        <li>Parto prematuro.</li>
+      </ul>
+    </p>
+    <div class="bg-gray-500 w-[100%] h-[1px] flex mb-2"></div>
+    <p>
+      <blockquote
+        title="Como funciona el TDAH"
+        cite="https://www.understood.org/es-mx/articles/adhd-and-the-brain"
+      >
+        <cite>
+          Las redes del cerebro están hechas de células cerebrales que pasan
+          información de neurona en neurona. Para hacerlo, del extremo de una
+          neurona se liberan pequeñas cantidades de químicos llamados
+          neurotransmisores. Estos químicos tienen que cruzar un pequeño espacio
+          llamado sinapsis para llegar al extremo de la siguiente neurona.
+
+          <ul class="px-6 my-2 list-disc font-semibold">
+            El TDAH puede afectar este proceso de ciertas maneras:
+            <li>
+              Puede que la neurona transmisora no libere suficientes
+              neurotransmisores.
+            </li>
+            Puede que la neurona receptora tenga problemas para “atrapar” los neurotransmisores.
+            <li>
+              Puede que los neurotransmisores sean succionados demasiado rápido
+              por la neurona transmisora, antes de que se logre una buena
+              conexión con la neurona receptora.
+            </li>
+          </ul>
+        </cite>
+      </blockquote>
+      <small
+        >Explicacion recuperada de: <a
+          href="https://www.understood.org/es-mx/articles/adhd-and-the-brain"
+          >Understood.org</a
+        ></small
+      >
+    </p>
+    <div class="bg-gray-500 w-[100%] h-[1px] flex mb-2"></div>
+    <p>
+      <h4 class="font-bold">Recomendaciones</h4>
+      <ul class="px-6 my-2 list-disc font-semibold">
+        <li>Tomar descansos al hacer cualquier actividad.</li>
+        <li>Tener una comunicación directa (ser específico).</li>
+        <li>
+          Evitar la exposición prologada a situaciones que puedan resultar
+          vergonzosas.
+        </li>
+        <li>Dar y respetar el espacio personal.</li>
+        <li>
+          Evitar distracciones (celular, música, videojuegos, televisión) al
+          realizar una actividad del día a día.
+        </li>
+      </ul>
+    </p>
+  </section>
+  <Ayuda />
+  <Buttons />
+  <Footer />
 </Layout>
